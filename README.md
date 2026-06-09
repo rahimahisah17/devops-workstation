@@ -8,4 +8,4 @@
 - VS Code
 
 ## Author
-[Rahimah] — SKILL.SCH Cloud Lab
+Rahimah — SKILL.SCH Cloud Lab
