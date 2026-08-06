@@ -1,27 +1,270 @@
-# DevOps Workstation Setup
+# 🖥️ DevOps Workstation Setup
 
-## Tools Verified
-## 🛠️ How These Tools Contribute to DevOps
+<p align="center">
 
-### 1. Git (Source Control Management)
-* **The DevOps Role:** Version Control & Single Source of Truth
-* **Contribution:** Git is the foundation of any DevOps pipeline. It enables tracking of codebase changes, secure collaboration via branching strategies, and auditability. By treating infrastructure and configuration as code, Git acts as the definitive trigger for automated Continuous Integration and Continuous Deployment (CI/CD) workflows.
+![Platform](https://img.shields.io/badge/Platform-Windows_11-0078D4?style=for-the-badge&logo=windows)
+![Git](https://img.shields.io/badge/Git-Installed-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Azure CLI](https://img.shields.io/badge/Azure_CLI-Installed-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Installed-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-Installed-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-Ready-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
-### 2. Azure CLI (Cloud Automation)
-* **The DevOps Role:** Command-Line Cloud Management
-* **Contribution:** The Azure CLI shifts cloud management away from manual portal clicks ("ClickOps") toward programmatic execution. It allows engineers to interact directly with Azure resources from the terminal, making cloud administration scriptable, highly efficient, and easily integrated into automated pipelines for deployment and resource auditing.
+</p>
 
-### 3. Docker (Containerization)
-* **The DevOps Role:** Environment Consistency & Isolation
-* **Contribution:** Docker solves the classic "works on my machine" problem by packaging applications and their exact dependencies into lightweight, isolated containers. This guarantees that software runs identically across local development workstations, staging environments, and production cloud clusters, accelerating release cycles and minimizing runtime failures.
+---
 
-### 4. Terraform (Infrastructure as Code)
-* **The DevOps Role:** Declarative Provisioning & State Management
-* **Contribution:** Terraform allows cloud infrastructure to be defined safely using human-readable configuration files (HCL). Rather than manually configuring cloud setups, DevOps teams use Terraform to provision, modify, and version control entire environments predictably, reducing human error and ensuring environmental parity.
+## 📖 Overview
 
-### 5. VS Code (Integrated Development Workspace)
-* **The DevOps Role:** Unified Engineering Interface
-* **Contribution:** Modern DevOps requires switching between code, terminal configurations, extensions, and source control seamlessly. VS Code serves as the central hub, integrating native terminal emulators, Git controls, and specialized linters/plugins for Docker and Terraform into a single pane of glass to optimize developer velocity.
+A properly configured workstation is the foundation of every successful DevOps engineer.
 
-## Author
-Rahimah Isah
+This repository documents the installation and verification of essential DevOps tools required for cloud engineering, Infrastructure as Code (IaC), containerization, source control, and cloud automation.
+
+The objective is to build a professional development environment capable of supporting modern DevOps workflows.
+
+---
+
+# 🛠️ Tools Verified
+
+| Tool | Purpose | Status |
+|------|---------|--------|
+| Git | Version Control | ✅ Installed |
+| Azure CLI | Azure Management | ✅ Installed |
+| Docker Desktop | Containerization | ✅ Installed |
+| Terraform | Infrastructure as Code | ✅ Installed |
+| Visual Studio Code | Development Environment | ✅ Installed |
+
+---
+
+# 🔍 Version Verification
+
+The following commands were used to verify each installation.
+
+## Git
+
+```bash
+git --version
+```
+
+Example Output
+
+```text
+git version 2.x.x.windows.x
+```
+
+---
+
+## Azure CLI
+
+```bash
+az version
+```
+
+Example Output
+
+```text
+azure-cli                         x.x.x
+```
+
+---
+
+## Docker
+
+```bash
+docker --version
+```
+
+Example Output
+
+```text
+Docker version xx.x.x
+```
+
+---
+
+## Terraform
+
+```bash
+terraform version
+```
+
+Example Output
+
+```text
+Terraform v1.x.x
+```
+
+---
+
+## Visual Studio Code
+
+```bash
+code --version
+```
+
+Example Output
+
+```text
+1.xx.x
+```
+
+---
+
+# 🚀 How These Tools Contribute to DevOps
+
+## 🌿 Git — Source Control Management
+
+### DevOps Role
+
+Version Control & Single Source of Truth
+
+### Contribution
+
+Git forms the backbone of modern DevOps practices by providing version control, collaboration through branching strategies, and complete change history.
+
+It also enables Infrastructure as Code (IaC) repositories to trigger automated CI/CD pipelines whenever changes are committed.
+
+---
+
+## ☁️ Azure CLI — Cloud Automation
+
+### DevOps Role
+
+Command-Line Cloud Management
+
+### Contribution
+
+Azure CLI replaces manual portal operations with automation.
+
+Engineers can provision, manage, monitor, and audit Azure resources directly from the command line, making deployments repeatable and ideal for scripting and CI/CD workflows.
+
+---
+
+## 🐳 Docker — Containerization
+
+### DevOps Role
+
+Environment Consistency & Isolation
+
+### Contribution
+
+Docker packages applications together with their dependencies into lightweight containers, ensuring applications run consistently across development, testing, and production environments.
+
+This eliminates the classic "works on my machine" problem.
+
+---
+
+## 🏗️ Terraform — Infrastructure as Code
+
+### DevOps Role
+
+Declarative Infrastructure Provisioning
+
+### Contribution
+
+Terraform enables infrastructure to be defined using code rather than manual configuration.
+
+Infrastructure becomes version-controlled, repeatable, and easily reproducible, reducing configuration drift and improving deployment reliability.
+
+---
+
+## 💻 Visual Studio Code — Development Workspace
+
+### DevOps Role
+
+Unified Engineering Interface
+
+### Contribution
+
+Visual Studio Code serves as the central workspace for DevOps engineers by integrating:
+
+- Source Control
+- Integrated Terminal
+- Docker Extension
+- Terraform Extension
+- Azure Extensions
+- Debugging Tools
+
+This creates a streamlined development experience for building and managing cloud-native applications.
+
+---
+
+# 🎯 DevOps Workflow
+
+```text
+                Write Code
+                     │
+                     ▼
+              Git Version Control
+                     │
+                     ▼
+              GitHub Repository
+                     │
+                     ▼
+              CI/CD Pipeline
+                     │
+        ┌────────────┼────────────┐
+        ▼                         ▼
+ Terraform                  Docker Build
+        │                         │
+        ▼                         ▼
+ Azure Infrastructure      Container Image
+        │                         │
+        └────────────┬────────────┘
+                     ▼
+              Cloud Deployment
+```
+
+---
+
+# 📂 Repository Structure
+
+```text
+devops-workstation-setup/
+│
+├── README.md
+├── screenshots/
+│   ├── git-version.png
+│   ├── azure-cli-version.png
+│   ├── docker-version.png
+│   ├── terraform-version.png
+│   └── vscode-version.png
+└── LICENSE
+```
+
+---
+
+# 🎯 Key Skills Demonstrated
+
+- Git Version Control
+- Cloud CLI Administration
+- Docker Containerization
+- Infrastructure as Code (Terraform)
+- Azure Automation
+- DevOps Environment Setup
+- Developer Productivity Tools
+- Command-Line Operations
+
+---
+
+# 📚 Technologies
+
+- Git
+- Azure CLI
+- Docker
+- Terraform
+- Visual Studio Code
+- Windows 11
+
+---
+
+# 👩‍💻 Author
+
+**Rahimah Isah**
+
+Cloud Engineer | DevOps Engineer | Microsoft Azure
+
+GitHub: https://github.com/rahimahisah17
+
+---
+
+## ⭐ If you found this repository helpful, consider giving it a star!
