@@ -217,24 +217,23 @@ This creates a streamlined development experience for building and managing clou
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```text
-devops-workstation-setup/
-│
-├── README.md
+devops-workstation/
 ├── screenshots/
-│   ├── git-version.png
-│   ├── azure-cli-version.png
-│   ├── docker-version.png
-│   ├── terraform-version.png
-│   └── vscode-version.png
-└── LICENSE
+│   ├── 01-git-version.png
+│   ├── 02-azure-cli-version.png
+│   ├── 03-docker-version.png
+│   ├── 04-terraform-version.png
+│   └── 05-vscode-version.png
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-# 🎯 Key Skills Demonstrated
+# 🎯 Key Skills 
 
 - Git Version Control
 - Cloud CLI Administration
