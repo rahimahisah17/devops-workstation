@@ -8,6 +8,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Installed-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-Installed-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-Ready-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![License](https://img.shields.io/github/license/rahimahisah17/devops-workstation-setup?style=for-the-badge)
 
 </p>
 
