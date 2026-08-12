@@ -259,7 +259,7 @@ devops-workstation/
 
 # 👩‍💻 Author
 
-**Rahimah Isah**
+**Rahimah Sulayman**
 
 Cloud Engineer | DevOps Engineer | Microsoft Azure
 
